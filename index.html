@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div>
+                <img src="logocross.png" height="60px">
+            </div>
+            <div>
+                <h2>Login</h2>
+            </div>
+
+            <div class="input1">
+                <input type="text" id="user-email" name="user-email" placeholder="Enter email or username">
+            </div>
+
+            <div class="input2">
+                <input type="text" id="password" name="password" placeholder="Enter your password">
+            </div>
+
+            <div>
+                <button onclick="loginsuccessfully()">Login</button>
+            </div>
+
+            <div>
+               <a href="sign.html">Don't have an account? Sign up</a>
+            </div>
+            
+        </div>
+        
+        <script>
+            function loginsuccessfully(){
+                window.location.href = "dash.html";
+            }
+        </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="patient-list.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div><img src="DOH.png" height="90PX"></div>
+            <h4>BARANGAY HEALTH CENTER<BR>PATIENT RECORD</h4>
+        </div>
+        <div class="panel">
+            <a href="dash.html">
+                <div><img src="dash.png" height="40px"></div>
+                <div>Dashboard</div>
+            </a>     
+        </div>
+        <div class="panel">
+            <a href="patient-list.html">
+                <div><img src="patient.png" height="40px"></div>
+                <div>Patient Record <br>Table</div>
+            </a>   
+        </div>
+        <div class="panel">
+            <a href="reports.html">
+                <div><img src="report.png" height="40px"></div>
+                <div>Reports</div>
+            </a>  
+        </div>
+       
+        <div class="panel">
+            <div>
+                <a href="profile.html"><img src="account.png" height="50"></a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <div>Logout</div>
+                </a>  
+            </div>
+            
+        </div>
+
+        <div class="panel">
+            
+            <div class="title">
+                <h3>Patient's List</h3>
+            </div>
+            <div class="add-search">
+                <div>
+                    <button onclick="addpatients()">Add Patients</button>
+                </div>
+                <div class="search1">
+                    <input type="text" id="search" name="search" placeholder="search">
+                    <button><img src="search (2).png" height="15px"></button>
+                </div>
+               
+            </div>
+        <div class="ta-container">
+            <div class="head-ta">
+         
+            </div>
+            <table>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Contact No.</th>
+                    <th>Date Added</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="view-button" onclick="viewpatients()">View</button>
+                         <button class="edit-button">Edit</button>
+                        <button  class="delete-button">Delete</button></td>
+
+                    
+                  </tr>
+                  <tr>
+               </table>
+
+        </div>
+          
+        </div>
+    </div>
+
+    <script>
+        function addpatients(){
+            window.location.href = "info.html";
+        }
+        
+        function viewpatients(){
+            window.location.href = "view-info.html";
+        }
+    </script>
+  
+    
+</body>
+</html>
